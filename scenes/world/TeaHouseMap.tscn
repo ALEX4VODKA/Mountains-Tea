@@ -1,0 +1,177 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/player/Player.tscn" id="1_player_scene"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_top_boundary"]
+size = Vector2(1216, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bottom_boundary"]
+size = Vector2(1216, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_left_boundary"]
+size = Vector2(32, 832)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_right_boundary"]
+size = Vector2(32, 832)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tea_house"]
+size = Vector2(232, 128)
+
+[node name="TeaHouseMap" type="Node2D"]
+
+[node name="TileMapLayers" type="Node2D" parent="."]
+
+[node name="GroundTileLayerPlaceholder" type="TileMapLayer" parent="TileMapLayers"]
+
+[node name="DecorationTileLayerPlaceholder" type="TileMapLayer" parent="TileMapLayers"]
+z_index = 2
+
+[node name="Ground" type="Polygon2D" parent="."]
+color = Color(0.24, 0.42, 0.25, 1)
+polygon = PackedVector2Array(-600, -400, 600, -400, 600, 400, -600, 400)
+
+[node name="SoftForestBackground" type="Polygon2D" parent="."]
+color = Color(0.14, 0.32, 0.22, 1)
+polygon = PackedVector2Array(-600, -400, -180, -400, -220, 160, -600, 220)
+
+[node name="TeaHouseArea" type="Node2D" parent="."]
+
+[node name="TeaHouseFloor" type="Polygon2D" parent="TeaHouseArea"]
+color = Color(0.47, 0.3, 0.17, 1)
+polygon = PackedVector2Array(-130, -130, 130, -130, 130, 40, -130, 40)
+
+[node name="TeaHouseRoof" type="Polygon2D" parent="TeaHouseArea"]
+z_index = 1
+color = Color(0.33, 0.16, 0.12, 1)
+polygon = PackedVector2Array(-150, -150, 150, -150, 115, -105, -115, -105)
+
+[node name="TeaHouseDoor" type="Polygon2D" parent="TeaHouseArea"]
+z_index = 2
+color = Color(0.18, 0.11, 0.08, 1)
+polygon = PackedVector2Array(-22, -30, 22, -30, 22, 40, -22, 40)
+
+[node name="WarmWindowLeft" type="Polygon2D" parent="TeaHouseArea"]
+z_index = 2
+color = Color(0.95, 0.68, 0.28, 1)
+polygon = PackedVector2Array(-92, -72, -54, -72, -54, -38, -92, -38)
+
+[node name="WarmWindowRight" type="Polygon2D" parent="TeaHouseArea"]
+z_index = 2
+color = Color(0.95, 0.68, 0.28, 1)
+polygon = PackedVector2Array(54, -72, 92, -72, 92, -38, 54, -38)
+
+[node name="FrontStonePath" type="Polygon2D" parent="."]
+color = Color(0.45, 0.4, 0.32, 1)
+polygon = PackedVector2Array(-42, 40, 42, 40, 82, 360, -84, 360)
+
+[node name="PathStone01" type="Polygon2D" parent="."]
+color = Color(0.56, 0.54, 0.47, 1)
+polygon = PackedVector2Array(-30, 70, 26, 66, 33, 104, -36, 108)
+
+[node name="PathStone02" type="Polygon2D" parent="."]
+color = Color(0.5, 0.49, 0.43, 1)
+polygon = PackedVector2Array(-44, 138, 42, 130, 48, 172, -50, 178)
+
+[node name="PathStone03" type="Polygon2D" parent="."]
+color = Color(0.57, 0.55, 0.49, 1)
+polygon = PackedVector2Array(-56, 220, 56, 212, 60, 260, -64, 268)
+
+[node name="TeaLeafGrove" type="Node2D" parent="."]
+
+[node name="TeaBush01" type="Polygon2D" parent="TeaLeafGrove"]
+color = Color(0.22, 0.55, 0.26, 1)
+polygon = PackedVector2Array(-470, -160, -420, -188, -372, -160, -392, -112, -450, -108)
+
+[node name="TeaBush02" type="Polygon2D" parent="TeaLeafGrove"]
+color = Color(0.18, 0.49, 0.24, 1)
+polygon = PackedVector2Array(-365, -245, -314, -272, -264, -244, -286, -198, -344, -194)
+
+[node name="TeaBush03" type="Polygon2D" parent="TeaLeafGrove"]
+color = Color(0.2, 0.52, 0.28, 1)
+polygon = PackedVector2Array(-510, 15, -456, -18, -402, 14, -428, 66, -486, 66)
+
+[node name="Tree01" type="Polygon2D" parent="TeaLeafGrove"]
+z_index = 1
+color = Color(0.08, 0.24, 0.16, 1)
+polygon = PackedVector2Array(-555, -300, -504, -356, -452, -300, -474, -246, -532, -246)
+
+[node name="Tree02" type="Polygon2D" parent="TeaLeafGrove"]
+z_index = 1
+color = Color(0.1, 0.27, 0.18, 1)
+polygon = PackedVector2Array(-295, -95, -248, -146, -198, -94, -218, -42, -276, -42)
+
+[node name="StreamWaterPoint" type="Node2D" parent="."]
+
+[node name="Stream" type="Polygon2D" parent="StreamWaterPoint"]
+color = Color(0.25, 0.5, 0.62, 1)
+polygon = PackedVector2Array(320, -400, 520, -400, 500, -230, 548, -80, 472, 85, 520, 245, 460, 400, 260, 400, 318, 210, 280, 44, 342, -116, 300, -260)
+
+[node name="WaterEdgeStone01" type="Polygon2D" parent="StreamWaterPoint"]
+z_index = 1
+color = Color(0.42, 0.43, 0.39, 1)
+polygon = PackedVector2Array(260, -92, 306, -112, 340, -78, 312, -44, 266, -48)
+
+[node name="WaterEdgeStone02" type="Polygon2D" parent="StreamWaterPoint"]
+z_index = 1
+color = Color(0.51, 0.52, 0.47, 1)
+polygon = PackedVector2Array(392, 152, 444, 136, 478, 172, 438, 214, 388, 202)
+
+[node name="FirewoodPile" type="Node2D" parent="."]
+position = Vector2(260, 210)
+
+[node name="Log01" type="Polygon2D" parent="FirewoodPile"]
+color = Color(0.47, 0.27, 0.13, 1)
+polygon = PackedVector2Array(-70, -16, 38, -26, 44, -8, -64, 2)
+
+[node name="Log02" type="Polygon2D" parent="FirewoodPile"]
+color = Color(0.55, 0.33, 0.16, 1)
+polygon = PackedVector2Array(-48, 2, 58, -8, 64, 12, -42, 22)
+
+[node name="Log03" type="Polygon2D" parent="FirewoodPile"]
+color = Color(0.38, 0.2, 0.1, 1)
+polygon = PackedVector2Array(-20, -34, 76, -42, 82, -24, -14, -16)
+
+[node name="VisibleMapEdges" type="Node2D" parent="."]
+
+[node name="TopEdge" type="Polygon2D" parent="VisibleMapEdges"]
+color = Color(0.11, 0.2, 0.14, 1)
+polygon = PackedVector2Array(-600, -400, 600, -400, 600, -372, -600, -372)
+
+[node name="BottomEdge" type="Polygon2D" parent="VisibleMapEdges"]
+color = Color(0.11, 0.2, 0.14, 1)
+polygon = PackedVector2Array(-600, 372, 600, 372, 600, 400, -600, 400)
+
+[node name="LeftEdge" type="Polygon2D" parent="VisibleMapEdges"]
+color = Color(0.11, 0.2, 0.14, 1)
+polygon = PackedVector2Array(-600, -400, -572, -400, -572, 400, -600, 400)
+
+[node name="RightEdge" type="Polygon2D" parent="VisibleMapEdges"]
+color = Color(0.11, 0.2, 0.14, 1)
+polygon = PackedVector2Array(572, -400, 600, -400, 600, 400, 572, 400)
+
+[node name="MapBoundary" type="StaticBody2D" parent="."]
+
+[node name="TopBoundary" type="CollisionShape2D" parent="MapBoundary"]
+position = Vector2(0, -416)
+shape = SubResource("RectangleShape2D_top_boundary")
+
+[node name="BottomBoundary" type="CollisionShape2D" parent="MapBoundary"]
+position = Vector2(0, 416)
+shape = SubResource("RectangleShape2D_bottom_boundary")
+
+[node name="LeftBoundary" type="CollisionShape2D" parent="MapBoundary"]
+position = Vector2(-616, 0)
+shape = SubResource("RectangleShape2D_left_boundary")
+
+[node name="RightBoundary" type="CollisionShape2D" parent="MapBoundary"]
+position = Vector2(616, 0)
+shape = SubResource("RectangleShape2D_right_boundary")
+
+[node name="TeaHouseWallCollision" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TeaHouseWallCollision"]
+position = Vector2(0, -48)
+shape = SubResource("RectangleShape2D_tea_house")
+
+[node name="Player" parent="." instance=ExtResource("1_player_scene")]
+position = Vector2(0, 170)

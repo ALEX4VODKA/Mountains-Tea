@@ -1,15 +1,8 @@
-[gd_scene load_steps=2 format=3]
+[gd_scene format=3 uid="uid://xm4dbaxu3ldk"]
 
-[ext_resource type="PackedScene" path="res://scenes/player/Player.tscn" id="1_player_scene"]
+[ext_resource type="PackedScene" path="res://scenes/world/TeaHouseMap.tscn" id="1_tea_house_map"]
 
-[node name="Main" type="Node2D"]
+[node name="Main" type="Node2D" unique_id=551122037]
 
-[node name="Ground" type="Polygon2D" parent="."]
-color = Color(0.25, 0.42, 0.25, 1)
-polygon = PackedVector2Array(-512, -320, 512, -320, 512, 320, -512, 320)
-
-[node name="Path" type="Polygon2D" parent="."]
-color = Color(0.45, 0.38, 0.28, 1)
-polygon = PackedVector2Array(-512, -36, 512, -36, 512, 36, -512, 36)
-
-[node name="Player" parent="." instance=ExtResource("1_player_scene")]
+[node name="TeaHouseMap" parent="." unique_id=1102985145 instance=ExtResource("1_tea_house_map")]
+position = Vector2(24, -40)
