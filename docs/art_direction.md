@@ -156,55 +156,243 @@ UI 要简单、清晰、温暖。
 - 交互时显示“按 E”
 - 制作和售卖面板保持最小化
 
-## 9. 素材搜索关键词
+## 9. 第一阶段美术资源搜索清单
 
-地图素材：
+第一阶段搜索重点不是“武侠”，而是“通用高质量像素自然风景 + 温暖小店”。先保证画面统一、可读、容易落地，再通过茶壶、木牌、灯笼、竹子、石板路等小物件补充中式气质。
 
-- pixel forest tileset
-- pixel nature tileset
-- top down rpg tileset
-- pixel village tileset
-- pixel house interior tileset
-- pixel mountain tileset
-- pixel path tileset
+### 地图 tileset 搜索关键词
+
+优先搜索：
+
+- top down pixel forest tileset
+- top down pixel nature tileset
+- cozy pixel forest tileset
+- pixel art forest tileset
+- pixel grass path tileset
+- pixel stone path tileset
 - pixel stream tileset
-- cozy pixel art tileset
+- pixel river tileset top down
+- pixel mountain nature tileset
+- top down RPG nature tileset
+- 16x16 pixel nature tileset
+- 32x32 pixel nature tileset
 
-茶铺和室内：
+组合搜索：
 
-- pixel tea shop
-- pixel tavern tileset
-- pixel inn interior
-- pixel cozy house tileset
-- pixel kitchen interior
+- cozy top down forest tileset
+- pixel forest village tileset
+- pixel cabin forest tileset
+- pixel mountain forest tileset
+- pixel nature tileset stream path
+- RPG maker style forest tileset pixel
+
+需要覆盖的地图元素：
+
+- 草地
+- 草丛
+- 树和树冠
+- 石板路或泥路
+- 石头
+- 小花
+- 溪流或水井
+- 木桥或踏石
+- 木屋外墙
+- 暖色窗光或灯光装饰
+
+### 茶铺室内素材关键词
+
+优先搜索：
+
+- pixel cozy house interior tileset
+- pixel cabin interior tileset
 - pixel shop interior tileset
+- pixel tavern interior tileset
+- pixel inn interior tileset
+- pixel kitchen interior tileset
+- pixel wooden furniture tileset
+- top down pixel interior tileset
+- cozy pixel room tileset
 
-氛围参考：
+补充搜索：
 
-- misty pixel art
-- cozy pixel art
-- warm light pixel art
-- forest pixel background
-- scenic pixel art
+- pixel tea table
+- pixel tea cup
+- pixel teapot
+- pixel wooden counter
+- pixel shelf tileset
+- pixel fireplace interior
+- pixel paper lantern
+- pixel warm light interior
+
+需要覆盖的室内元素：
+
+- 木地板
+- 墙面
+- 柜台
+- 桌椅
+- 货架
+- 茶具或可替代的小餐具
+- 床或睡觉点
+- 暖灯、炉火或窗光
+
+### 主角素材关键词
+
+优先搜索：
+
+- top down pixel character
+- top down pixel character sprite
+- pixel character 4 direction walk
+- pixel RPG character walking spritesheet
+- cozy game pixel character
+- farmer pixel character top down
+- villager pixel character sprite
+- adventurer pixel character top down
+
+可选气质关键词：
+
+- pixel character straw hat
+- pixel character apron
+- pixel character simple clothes
+- pixel character village outfit
+
+主角素材最低要求：
+
+- 至少 4 方向行走：上、下、左、右
+- 像素尺寸和地图 tileset 接近，优先 16x16、24x24、32x32
+- 轮廓清楚，不依赖复杂动作
+- 第一阶段不需要攻击、技能、装备动画
+
+### UI 素材关键词
+
+优先搜索：
+
+- pixel UI pack
+- cozy pixel UI
+- pixel RPG UI
+- pixel inventory UI
+- pixel icon pack
+- pixel item icons
+- pixel fantasy UI
+- pixel wood UI
+- pixel paper UI
+- pixel button UI
+
+资源图标搜索：
+
+- pixel tea leaves icon
+- pixel water bottle icon
+- pixel water drop icon
+- pixel firewood icon
+- pixel tea cup icon
+- pixel coin icon
+- pixel clock icon
+- pixel backpack icon
+
+UI 最低需求：
+
+- 背包面板背景
+- 物品格子
+- 按钮
+- 金币图标
+- 时间或昼夜图标
+- 交互提示框
+- 茶叶、山泉水、木柴、简单茶图标
+
+### 音效和音乐关键词
+
+环境音乐：
+
+- cozy pixel game music
+- relaxing forest game music
+- peaceful village game music
+- cozy shop game music
+- calm acoustic game loop
+- relaxing nature loop music
+- tea house ambience music
+- peaceful mountain ambience
+
+环境音：
+
+- forest ambience loop
+- stream ambience loop
+- birds ambience loop
+- night ambience loop
+- cozy fireplace ambience
+
+音效：
+
+- pixel collect sound
+- item pickup sound
+- crafting sound effect
+- coin sound effect
+- shop bell sound effect
+- UI click sound pixel
+- sleep sound effect
+- water collect sound
+- wood pickup sound
+
+音频最低要求：
+
+- 1 段可循环的白天环境音乐
+- 1 个采集音效
+- 1 个制作音效
+- 1 个售卖或金币音效
+- 可选：溪流环境音、夜晚环境音、UI 点击音效
 
 ## 10. 第一阶段最少素材列表
 
-第一阶段只需要：
+第一阶段不要追求素材数量多。最少下载这些素材即可开始替换占位图：
 
-- 1 个主角行走素材
-- 1 套草地、森林、石路 tileset
-- 1 套木屋或室内素材
-- 3 个采集物图标：
-  - 茶叶
-  - 山泉水
-  - 木柴
-- 1 套简单 UI 框
-- 1 个像素字体
-- 1 段环境音乐
-- 2 到 3 个音效：
-  - 采集
-  - 制作
-  - 售卖
+1. 主角行走 spritesheet
+   - 用途：玩家移动
+   - 最低要求：4 方向行走
+   - 可接受风格：村民、采集者、店主、旅行者
+
+2. 自然地图 tileset
+   - 用途：茶铺外部地图
+   - 最低要求：草地、树、石路、石头、花草
+   - 优先带有：溪流、水边石块、木桥、山地边缘
+
+3. 木屋或茶铺外观 tileset
+   - 用途：茶铺建筑外观
+   - 最低要求：木墙、屋顶、门、窗
+   - 可替代方案：通用木屋、小屋、村庄建筑素材
+
+4. 室内 tileset
+   - 用途：茶铺室内、制作点、售卖点、睡觉点
+   - 最低要求：木地板、墙、柜台、桌椅、货架、床
+   - 可替代方案：cozy house、inn、tavern、shop interior
+
+5. 物品图标小包
+   - 用途：背包和制作显示
+   - 最低要求：
+     - tea_leaves：茶叶
+     - spring_water：水滴、水瓶或泉水
+     - firewood：木柴
+     - simple_tea：茶杯或茶壶
+     - coin：金币
+
+6. 简单像素 UI 包
+   - 用途：背包、金币、时间、提示、制作和售卖面板
+   - 最低要求：面板、格子、按钮、提示框
+   - 风格建议：木质、纸张、暖色、低饱和
+
+7. 像素字体
+   - 用途：UI 文本
+   - 最低要求：英文和数字清晰
+   - 如果要显示中文，必须确认字体支持中文字符
+
+8. 白天环境音乐
+   - 用途：外部探索和茶铺氛围
+   - 最低要求：可循环、安静、自然、不过于史诗
+
+9. 基础音效包
+   - 用途：交互反馈
+   - 最低要求：
+     - 采集
+     - 制作
+     - 售卖或金币
+     - UI 点击可选
 
 ## 11. 素材使用原则
 
